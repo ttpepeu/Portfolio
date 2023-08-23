@@ -48,18 +48,37 @@
 }
 
 #linkedin {
-    width: 10%;
+    width: 8%;
     position: absolute;
-    bottom: 6%;
-    left: 32%;
+    bottom: 7%;
+    left: 28%;
+}
+
+#linkedin:hover {
+    width: 10%;
+}
+
+#github {
+    width: 8%;
+    position: absolute;
+    bottom: 7%;
+    left: 43%;
+}
+
+#github:hover {
+    width: 10%;
 }
 
 
 #email {
-    width: 10%;
+    width: 8%;
     position: absolute;
-    bottom: 6%;
-    right: 42%;
+    bottom: 7%;
+    right: 34%;
+}
+
+#email:hover {
+    width: 10%;
 }
 
 #actor {
@@ -79,8 +98,37 @@
 
 #textSoon {
     position: absolute;
-    top: 45%;  
+    top: 50%;  
     left: 22%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 210%;
 }
+
+.boxProject {
+    position: absolute;
+    background-color: #EDEDED;
+    top: 4%;
+    left: 10%;
+    width: 80%;
+    height: 26%;
+    border-radius: 15px;
+}
+
+.boxProject:hover {
+    outline: solid #5C5858;
+}
+
+.boxProject img {
+    width: 21%;
+    border-radius: 15px;
+}
+
+.textProject{
+    position: absolute;
+    left: 28%;
+    top: 20%;
+    padding-right: 6%;
+    font-size: 110%;
+    color: #000000;
+}
+
