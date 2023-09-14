@@ -96,22 +96,15 @@
     left: 23%;
 }
 
-#textSoon {
-    position: absolute;
-    top: 50%;  
-    left: 22%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 210%;
-}
 
 .boxProject {
     position: absolute;
     background-color: #EDEDED;
-    top: 4%;
-    left: 10%;
     width: 80%;
     height: 26%;
     border-radius: 15px;
+    display: flex;
+    justify-content:flex-start;
 }
 
 .boxProject:hover {
@@ -130,5 +123,15 @@
     padding-right: 6%;
     font-size: 110%;
     color: #000000;
+}
+
+#stocks {
+    top: 4%;
+    left: 10%;
+}
+
+#employeeCard {
+    top: 35%;
+    left: 10%;
 }
 
