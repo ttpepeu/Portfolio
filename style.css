@@ -1,137 +1,233 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* My Bio */
+a:link {
+    text-decoration: none;
+}
 
-#columnBio {
-    width: 23%;
-    height: 100%;
-    position: absolute;
+#soon{
+    display: none;
+}
+
+#my-sumup {
+    display:flex;
+    flex-direction: row;
+}
+
+/*Bio Column*/
+
+#bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #EDEDED;
+    height: 100vh;
+    width: 50vh;
 }
 
-.titleOfPage {
-    position: absolute;
-    left: 14%;
-    top: 28%;
+.elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#my-picture {
+    padding-top: 2vh;
+    height: 22vh;
+    width: 20vh;
+}
+
+#title-of-page {
     font-family: monospace;
-    font-size: 220%;
+    font-size: 1.6rem;
 }
 
-
-#myPhoto {
-    position: absolute;
-    width: 50%;
-    height: auto;
-    top: 2%;
-    left: 22%;
-    bottom: 1%;
+#bio-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color:#808080;
+    padding: 2vh;
 }
 
-
-.textBio {
-    position: absolute;
-    top: 33%;
-    padding-left: 6%;
-    padding-right: 6%;
-    font-family: monospace;
-    color: #858585;
+#title-contacts {
+    display: flex;
+    align-items: flex-end;
+    height: 41vh;
 }
 
-#contatos {
-    width: 2px;
-    position: absolute;
-    bottom: 13%;
-    left: 33%;
+#contacts {
+    display: flex;
+    justify-content:space-between;
+    align-self:initial;
+    align-items: flex-end;
+    height: 5vh;
+    width: 20vh;
 }
 
 #linkedin {
-    width: 8%;
-    position: absolute;
-    bottom: 7%;
-    left: 28%;
-}
-
-#linkedin:hover {
-    width: 10%;
+    height: 4vh;
+    width: 4vh;
 }
 
 #github {
-    width: 8%;
-    position: absolute;
-    bottom: 7%;
-    left: 43%;
+    height: 4vh;
+    width: 4vh;
+}
+
+#email {
+    height: 4vh;
+    width: 4vh;
+}
+
+#linkedin:hover {
+    height: 5vh;
+    width: 5vh;
 }
 
 #github:hover {
-    width: 10%;
-}
-
-
-#email {
-    width: 8%;
-    position: absolute;
-    bottom: 7%;
-    right: 34%;
+    height: 5vh;
+    width: 5vh;
 }
 
 #email:hover {
-    width: 10%;
+    height: 5vh;
+    width: 5vh;
 }
 
 #actor {
-    position: absolute;
-    bottom: 2%;
-    left: 20%;
+    display: flex;
+    align-items: flex-end;
+    height: 4vh;
 }
 
-/* My Projects */
+/*Projects Column*/
 
-#columnProjects {
-    position: absolute;
-    width: 77%;
-    height: 100%;
-    left: 23%;
+#projects-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
 }
-
 
 .boxProject {
-    position: absolute;
-    background-color: #EDEDED;
-    width: 80%;
-    height: 26%;
-    border-radius: 15px;
     display: flex;
-    justify-content:flex-start;
+    flex-direction: row;
+    text-align: center;
+    background-color: #EDEDED;
+    color: #000000;
+    border-radius: 15px;
+    height: 25vh;
+    width: 100vh;
+}
+
+.boxProject img{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .boxProject:hover {
     outline: solid #5C5858;
 }
 
-.boxProject img {
-    width: 21%;
-    border-radius: 15px;
+
+.text-project{
+    text-align: left;
+    padding: 5vh;
 }
 
-.textProject{
-    position: absolute;
-    left: 28%;
-    top: 20%;
-    padding-right: 6%;
-    font-size: 110%;
-    color: #000000;
-}
+ /*Medium Screens*/
+ @media (max-width: 900px) {
+    #my-sumup {
+        display:flex;
+        flex-direction: column;
+    }
 
-#stocks {
-    top: 4%;
-    left: 10%;
-}
+    /*Bio Column*/
+    
+    #bio-container{
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        height: 40vh;
+        width: 100%;
+    }
 
-#employeeCard {
-    top: 35%;
-    left: 10%;
-}
+    #my-picture {
+        padding-top: 2vh;
+        height: 20vh;
+        width: 20vh;
+    }
 
+    #bio-text {
+        text-align: left;
+    }
+    
+    #title-contacts {
+        display: none;
+    }
+    
+    #contacts {
+        display: none;
+    }
+    
+    #linkedin {
+        display: none;
+    }
+    
+    #github {
+        display: none;
+    }
+    
+    #email {
+        display: none;
+    }
+    
+    #actor {
+        display: none;
+    }
+
+    /*Projects*/
+    #projects-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 65vh;
+        width: 100%;
+    }
+
+    .boxProject{
+        height: 20vh;
+        width: 60VH;
+    }
+
+    .boxProject:hover {
+        outline: none;
+    }
+
+    .text-project{
+        text-align: left;
+        padding: 2vh;
+    }
+    
+ }
+
+ /*Small Screens*/
+ @media (max-width: 500px) {
+    #my-sumup {
+        display: none;
+    }
+    #soon {
+        display: flex;
+        font-style:unset;
+        font-size: larger;
+        align-items: center;
+        padding: 5vh;
+    }
+ }
