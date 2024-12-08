@@ -142,7 +142,7 @@ a:link {
 }
 
  /*Medium Screens*/
- @media (max-width: 900px) {
+ @media (max-width: 1100px) {
     #my-sumup {
         display:flex;
         flex-direction: column;
@@ -166,6 +166,7 @@ a:link {
 
     #bio-text {
         text-align: left;
+        font-size: 30px;
     }
     
     #title-contacts {
@@ -214,20 +215,42 @@ a:link {
     .text-project{
         text-align: left;
         padding: 2vh;
+        font-size: 30px;
     }
     
  }
 
  /*Small Screens*/
- @media (max-width: 500px) {
+ @media (max-width: 480px) {
     #my-sumup {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .boxProject{
+        height: 10vh;
+        width: 80vw;
+    }
+    .boxProject img{
         display: none;
     }
-    #soon {
-        display: flex;
-        font-style:unset;
-        font-size: larger;
-        align-items: center;
-        padding: 5vh;
+
+    #bio-container{
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        height: 40vh;
+        width: 100vw;
+    }
+    
+    #bio-text {
+        text-align: left;
+        font-size: 100%;
+    }
+
+    .text-project{
+        text-align: center;
+        padding: 2vw;
+        font-size: 100%;
     }
  }
